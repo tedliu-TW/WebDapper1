@@ -1,0 +1,35 @@
+﻿@model WebDapper1.Models.DomainModel.Login
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>會員登入_Login</h2>
+
+<form action="@Url.Action("Login")" method="post">
+    <div>
+        <hr />
+        <div class="form-group">
+            <span class="control-label col-md-2">帳號</span>
+            <div class="col-md-10">
+                <input type="text" id="Account" name="Account" required="required" class="form-control" />
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <span class="control-label col-md-2">密碼</span>
+            <div class="col-md-10">
+                <input type="text" id="Password" name="Password" required="required" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <input type="submit" value="登入" class="btn-default" />
+            </div>
+        </div>
+
+
+    </div>
+</form>
